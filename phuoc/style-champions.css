@@ -378,147 +378,142 @@ main {
 
 /*End Header Right */
 
-/* Footer */
-.main-footer-container {
-    background-color: rgb(17, 17, 17);
-    color: #a0a0a0;
-    padding-top: 0 !important;
-    padding: 40px 0;
-    text-align: center;
-    margin-top: 16px;
-}
+        /* --- BỔ SUNG: STYLING CHO FOOTER --- */
+        .main-footer-container {
+            background-color: #1a1a1a;
+            color: #a0a0a0;
+            text-align: center;
+            margin-top: auto; 
+        }
+        .footer-top-section {
+        user-select: none;
+        box-sizing: border-box;
+        font-family: "FF Mark W05", Arial, sans-serif;
+        background: #292929;
+        padding: 24px;
+        margin: 0;
+        color: #7e7e7e;
+        font-weight: 700;
+        font-size: 13px;
+        letter-spacing: .08em;
+        text-align: center;
+        text-transform: uppercase;
+        }
+        .footer-nav-top ul,
+        .footer-nav-bottom ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            gap: 30px;
+        }
 
-.footer-nav-top {
-    padding: 24px 0;
-    background-color: rgb(41,41,41);
-    width: 100%;
-    height: 30.95px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    SCROLL-MARGIN-TOP: 80px;
-}
+        .footer-nav-top ul li a,
+        .footer-nav-bottom ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.2s ease;
+            display: block;
+        }
 
-.footer-nav-top ul,
-.footer-nav-bottom ul {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 15px 30px;
-}
+        .footer-nav-top ul li a:hover,
+        .footer-nav-bottom ul li a:hover {
+            color: #c4c4c4;
+        }
 
-.footer-nav-top ul li a,
-.footer-nav-bottom ul li a {
-    color: #f0f0f0;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 12.5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: color 0.2s ease;
-}
+        .footer-social-links {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-.footer-nav-top ul li a:hover,
-.footer-nav-bottom ul li a:hover {
-    color: #c4c4c4;
-}
+        .footer-social-links a {
+            color: #888;
+            transition: color 0.2s ease;
+        }
 
-.footer-social-links {
-    margin-top: 18px;
-    margin-bottom: 42px;
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-}
+        .footer-social-links a:hover {
+            color: #fff;
+        }
 
-.footer-social-links a {
-    background-color: rgb(41,41,41);
-    transition: background-color 0.3s ease;
-    border-radius: 15px;
-    height: 36px;
-    width: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        .footer-social-links svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
 
-.footer-social-links a:hover {
-    color: #fff;
-}
+        .footer-logos {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; /* Cho phép xuống dòng trên màn hình nhỏ */
+            gap: 20px;
+        }
 
-.footer-social-links svg {
-    width: 16px;
-    height: 16px;
-    fill: #fdfefe;
-   
-}
+        .footer-logos .riot-logo-footer svg {
+            height: 30px;
+            width: auto;
+            fill: #777;
+        }
 
-.footer-logos {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-}
+        .footer-logos .vng-logo-footer {
+            font-size: 28px;
+            font-weight: 800;
+            color: #777;
+            letter-spacing: -1px;
+            font-style: italic;
+            /* Placeholder đơn giản cho logo VNG Games */
+            font-family: 'Inter', sans-serif; 
+        }
 
-.footer-logos .riot-logo-footer svg {
-    height: 30px;
-    width: auto;
-    fill: #777;
-}
+        .footer-copyright {
+            font-size: 12px;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            line-height: 1.6;
+            color: #777;
+        }
 
-.footer-logos .vng-logo-footer {
-    font-size: 28px;
-    font-weight: 800;
-    color: #777;
-    letter-spacing: -1px;
-    font-style: italic;
-    /* Placeholder đơn giản cho logo VNG Games */
-    font-family: 'Inter', sans-serif; 
-}
+        .footer-nav-bottom {
+            margin-bottom: 30px;
+        }
 
-.footer-copyright {
-    font-size: 13px;
-    font-weight: 500;
-    width: 640px;
-    height: 36px;
-    margin: 20px auto 30px auto;
-    line-height: 18.2px;
-    color: rgb(126,126,126);
-}
+        .footer-age-rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border: 2px solid #555;
+            background-color: #000;
+            padding: 15px 20px;
+            width: 280px;
+            border-radius: 4px;
+        }
 
-.footer-nav-bottom {
-    margin-bottom: 30px;
-}
+        .age-rating-18 {
+            font-size: 60px;
+            font-weight: 900;
+            color: #fff;
+            line-height: 1;
+            border-right: 2px solid #555;
+            padding-right: 15px;
+            margin-right: 15px;
+        }
 
-.footer-age-rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    border: 2px solid #555;
-    background-color: #000;
-    padding: 15px 20px;
-    width: 280px;
-    border-radius: 4px;
-}
-
-.footer-rating {
-    background-color: #313131; 
-    border-radius: 8px;
-    padding: 12px;
-    display: inline-block;
-}
-.rating-logo img {
-    display: block;
-    height: auto; 
-    max-width: 100%;
-}
+        .age-rating-text {
+            font-size: 13px;
+            color: #fff;
+            text-align: left;
+            line-height: 1.5;
+        }   
 
 
 
@@ -1337,4 +1332,13 @@ main {
 .skin-nav-btn.disabled {
     color: #999999 !important;
     cursor: not-allowed;
+}
+
+@media (max-width: 1140px) {
+    .champion-stats-links {
+       margin-bottom: 40px;
+    }
+    .abilities-section {
+        padding-bottom: 300px !important;
+    }
 }

@@ -630,7 +630,7 @@
     
     /* FOOTER */
     .main-footer-container {
-        padding: 24px 16px;
+        padding-right: 32px;
         margin-top: 12px;
     }
     
@@ -918,25 +918,15 @@
         font-size: 9px;
     }
     
-    /* FOOTER */
-    .footer-nav-top ul,
-    .footer-nav-bottom ul {
-        gap: 6px 12px;
+ /* --- Footer --- */
+    .footer-logos {
+        flex-direction: column;
+        gap: 15px;
     }
     
-    .footer-nav-top ul li a,
-    .footer-nav-bottom ul li a {
-        font-size: 9px;
-    }
-    
-    .footer-copyright {
-        font-size: 10px;
-        padding: 0 8px;
-    }
-    
-    .footer-age-rating {
-        max-width: 200px;
-        padding: 8px 10px;
+    .footer-nav-top ul, .footer-nav-bottom ul {
+        flex-direction: column; /* Menu footer xếp dọc */
+        gap: 15px;
     }
 }
 
