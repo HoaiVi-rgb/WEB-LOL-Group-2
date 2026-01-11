@@ -1,0 +1,1 @@
+document.getElementById("loadMore").style.display = "none";
