@@ -304,6 +304,7 @@
     .header-left {
         order: 1;
         min-width: auto;
+        max-width: 30%;
     }
     
     .logo-riot svg {
