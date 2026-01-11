@@ -8,6 +8,10 @@ body {
     font-family: "Inter", sans-serif; /* Đặt font chung cho body */
     overflow-x: hidden; /* Ẩn thanh cuộn ngang thừa */
     background-color: #1a1a1a;
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    /* background-color: #ffffff; */
 }
 
 img {
@@ -48,12 +52,6 @@ html{
     font-display: swap;
 }
 
-body {
-    margin:0;
-    padding:0;
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-}
 
 main {
     width: 100%;
@@ -1782,7 +1780,10 @@ color: #0A1428;
             text-align: left;
             line-height: 1.5;
         }
-
+        .rating-logo{
+            display: flex;
+            justify-content: center;
+        }
 /* end footer */
 /* Animation */
 @keyframes fadeIn {
