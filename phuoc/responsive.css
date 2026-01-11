@@ -260,7 +260,6 @@
     
     /* FOOTER */
     .main-footer-container {
-        padding: 30px 20px;
     }
     
     .footer-nav-top ul,
@@ -629,71 +628,15 @@
     }
     
     /* FOOTER */
-    .main-footer-container {
-        padding-right: 32px;
-        margin-top: 12px;
-    }
-    
-    .footer-nav-top {
-        padding: 16px;
-        height: auto;
-    }
-    
-    .footer-nav-top ul,
-    .footer-nav-bottom ul {
-        gap: 8px 16px;
-    }
-    
-    .footer-nav-top ul li a,
-    .footer-nav-bottom ul li a {
-        font-size: 10px;
-    }
-    
-    .footer-social-links {
-        margin-top: 12px;
-        margin-bottom: 24px;
-        gap: 6px;
-    }
-    
-    .footer-social-links a {
-        height: 32px;
-        width: 32px;
-    }
-    
-    .footer-social-links svg {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .footer-copyright {
-        width: 100%;
-        height: auto;
-        font-size: 11px;
-        padding: 0 12px;
-        margin: 12px auto 16px auto;
-        line-height: 1.4;
-    }
-    
-    .footer-nav-bottom {
-        margin-bottom: 16px;
-    }
-    
-    .footer-age-rating {
-        width: 100%;
-        max-width: 220px;
-        padding: 10px 12px;
-    }
-    
+    /* --- Footer --- */
     .footer-logos {
-        gap: 12px;
+        flex-direction: column;
+        gap: 15px;
     }
     
-    .footer-logos .riot-logo-footer svg {
-        height: 24px;
-    }
-    
-    .footer-logos .vng-logo-footer {
-        font-size: 22px;
+    .footer-nav-top ul, .footer-nav-bottom ul {
+        flex-direction: column; /* Menu footer xếp dọc */
+        gap: 15px;
     }
 }
 
